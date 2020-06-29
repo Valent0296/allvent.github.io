@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto;
+	background-color: #bcebe8;
+}
+
+body>img {
+	width:30%;
+	height:30%;
+	position:absolute;
+	top:-5%;
+	left: 35%;
+}
+
+/**STILI CONTENUTO PRINCIPALE**/
+#principale {
+	height:65%;
+	width:100%;
+	position:absolute;
+	top:17.5%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: white;
+}
+
+#principale>ul {
+	display:block;
+	width: 30%;
+	height:100%;
+	position:absolute;
+	right:0;
+	top:0;
+	margin:0;
+	list-style-type:none;
+}
+
+#principale>ul>li {
+	list-style-image: none;
+	background:#5eebe1;
+	display:block;
+	height:33.3%;
+	width:100%;
+	transition-property:background;
+	transition-duration:1.5s;
+}
+
+#principale>ul>li#place:hover {
+	background:url(../image/unnamed.jpg);	
+}
+
+#principale>ul>li#internet:hover {
+	background:url(../image/social.png);
+	background-size: 100%;	
+}
+
+#principale>ul>li#mail:hover {
+	background:url(../image/mail.png);
+	background-size: 100%;		
+}
+
+#principale>ul>li>a {
+	position:relative;
+	top: 35%;
+	bottom:35%;
+	left:30%;
+	right:30%;
+	font-size: 1.5em;
+	text-decoration:none;
+	color:white;
+}
+
+#principale>div {
+	width:0;
+	height:0;
+	font-size:0;
+}
+
+#principale>#social>div>a>img,#principale>div>img  {
+	width:0;
+	height:0;
+}
+
+#principale>#mailme {
+	opacity:0;
+}
+
+#principale>#previously.triggered {
+	line-height:3em;
+	font-size:1.2em;
+	color:white;
+	background: url(../image/unnamed2.jpg);
+	background-size:100%;
+}
+
+#principale>#previously.triggered>div {
+	height:auto;
+	width:50%;
+	margin:0;
+
+}
+
+#principale>#social.triggered {
+	font-size:1.2em;
+	background: url(../image/social2.png);
+	background-size:100%;
+}
+
+#principale>#social.triggered>div {
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+}
+
+#principale>#social.triggered>div>a {
+	height:10%;
+	width:10%;
+}
+
+#principale>#social.triggered>div>a>img {
+	height:100%;
+	width:100%;
+}
+
+#principale>#mailme.triggered {
+	opacity:1;
+	line-height:2em;
+	font-size:1.2em;
+	background: url(../image/mail2.png);
+	background-size:100%;
+}
+
+/**STILI FOOTER**/
+#fondo {
+	height: 10%;
+	width:100%;
+	position:absolute;
+	top:82.5%;
+}
+
+#fondo>#home {
+	height:80%;
+	width:25.3%;
+	position:absolute;
+	top: 10%;
+	left: 37.35%;
+	font-size: 1.5em;
+	border-radius:7px;
+	background-color:#5eebe1;
+	transition-property:background-color;
+	transition-duration: 0.4s;
+}
+
+#fondo>#home:hover {
+	background-color:#317cf5;
+}
+
+#fondo>#home>a {
+	position:relative;
+	top: 20%;
+	left: 40%;
+	text-decoration:none;
+	color:white;
+}

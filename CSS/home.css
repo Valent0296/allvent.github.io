@@ -1,0 +1,193 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto;
+	background-color: #bcebe8;
+}
+
+/**STILI MENù PRINCIPALE**/
+#testata {
+	height:65%;
+	width:100%;
+	position:absolute;
+	top:12.5vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: white;
+}
+
+#testata>ul {
+	position: absolute;
+	top:12.5%; 
+	height: 65%;
+	width: 25%;
+	padding: 0;
+}
+
+#testata>ul>li {
+	display: block;
+	list-style-image: none;
+	background-color:#5eebe1;
+	margin: 6% 0;
+	height:25.3%;
+	width:20%;
+	font-size: 0;
+	border-bottom-right-radius: 7px;
+	border-top-right-radius: 7px;
+	transition-property:background-color;
+	transition-duration: 0.4s;
+	transition-property:width;
+	transition-duration: 0.4s;
+	transition-property:font-size;
+	transition-duration: 0.4s;
+}
+
+#testata>ul>li:hover {
+	background-color:#317cf5;
+	width:80%;
+	font-size: 1.5em;
+}
+
+#testata>ul>li>a {
+	position:relative;
+	top: 25%;
+	text-decoration:none;
+	color:white;
+}
+
+#testata>img {
+	height:60%;
+	width:30%;
+	position:absolute;
+	left:30%;
+	top:20%;
+}
+
+#testata>iframe {
+	width:30%;
+	height:70%;
+	position:absolute;
+	right:5%;
+	top:10%;
+}
+
+/**STILI CONTENUTO PRINCIPALE**/
+#principale {
+	height:257.5%;
+	width:100%;
+	position:absolute;
+	top: 100vh;
+	display:flex;
+	flex-direction:column;
+}
+
+#principale>.cont{
+	height:65vh;
+	width:100%;
+	background-color: white;
+	margin:12.5vh 0;
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+#principale>.cont>.bio{ 
+	height:100%;
+	width:100%;
+	background:white;
+	transition-property:background;
+	transition-duration:2s;
+}
+
+#principale>.cont.triggered>.bio {
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+}
+
+/* #principale>.cont[id="education"]>.bio{
+	background:white;
+	transition-property:background;
+	transition-duration:2s;
+}
+
+#principale>.cont.triggered[id="education"]>.bio{
+	background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+} */
+
+#principale>#life{
+	background-image:url(../image/alberobello.png);
+	background-position: right center;
+	background-size: 49.35vw 65vh;
+	background-repeat: no-repeat; 
+}
+
+#principale>#education{
+	background-image:url(../image/arm.png);
+	background-position: right center;
+	background-size: 49.35vw 65vh;
+	background-repeat: no-repeat;
+}
+
+#principale>#passions{
+	background-image:url(../image/clint.png);
+	background-position: right center;
+	background-size: 49.35vw 65vh;
+	background-repeat: no-repeat;
+}
+
+/* #education>.bio>h1 {
+	height:20%;
+	float:right;
+} */
+
+
+#principale>.cont>.bio>div {
+	height:80%;
+	width:50%;
+	line-height:3em;
+	font-size:1.2em;
+}
+
+/**STILI FOOTER**/
+#fondo {
+	height: 10%;
+	width:100%;
+	position:absolute;
+	top:357.5%;
+}
+
+#fondo>#contatto {
+	height:80%;
+	width:25.3%;
+	position:absolute;
+	top: 10%;
+	left: 37.35%;
+	font-size: 1.5em;
+	border-radius:7px;
+	background-color:#5eebe1;
+	transition-property:background-color;
+	transition-duration: 0.4s;
+}
+
+#fondo>#contatto:hover {
+	background-color:#317cf5;
+}
+
+#fondo>#contatto>a {
+	position:relative;
+	top: 20%;
+	left: 32.5%;
+	text-decoration:none;
+	color:white;
+}

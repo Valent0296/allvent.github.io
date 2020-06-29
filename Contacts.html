@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+	<head>
+	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Valentino Laera-Contacts</title>
+		
+		<style>
+			@import url(CSS/contacts.css);
+		</style>
+		
+		<script src="JS/jquery-3.5.1.js"></script>
+		<script src="JS/contacts.js"></script>
+	
+	</head>
+	
+	<body>
+		
+		<img src="image/logofinale2.png">
+	
+		<main id="principale">
+		
+			<div id="previously">
+				<h1>Where I am</h1>
+					<div>I am currently studying in Pavia,<br>
+					living in Collegio F.lli Cairoli.<br>
+					I am trying to get a master degree in Computer Engineering<br>
+					but i also work as a freelance programmer in my free time.
+					</div>
+					
+			</div>
+			<div id="social">
+				<h1>Where you can find me</h1>
+				<div>
+					<a src="https://www.facebook.com/valentino.laera"><img src="image/facebook.png"></a>
+					<a src="https://www.instagram.com/valentinolaera/"><img src="image/instagram.png"></a>
+					<a src="https://www.linkedin.com/in/valentino-laera-6b555119a"><img src="image/linkedin.png"></a>
+				</div>
+			</div>
+			<div id="mailme">
+				<h1>E-mail</h1>
+				<form name="modulo">
+					Oggetto:<br>
+					<input type="text" name="oggetto"> <br>
+					Messaggio:<br>
+					<textarea name="messaggio" rows="10" cols="30"></textarea> <br>
+					<input type="button" value="Invia" onClick="Email()">
+				</form>
+			</div>
+		
+			<ul id="menu">
+				<li id="place"><a href="#previously" onclick="dinamico(this)" >Where on earth</a></li>
+				<li id="internet"><a href="#social" onclick="dinamico(this)"> Where on-line</a></li>
+				<li id="mail"><a href="#mailme" onclick="dinamico(this)">Write to me</a></li>
+			</ul>
+		</main>
+		
+		<footer id="fondo">
+		
+			<div id="home"><a href="index.html">Home</a></div>
+		
+		</footer>
+	</body>
+
+</html>
